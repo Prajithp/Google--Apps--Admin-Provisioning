@@ -55,7 +55,7 @@ The following parameters are optional:
         
 
 __Example__
-
+```
 my $users = $client->getAllUsers(orderBy => 'email', sortOrder => 'ASCENDING');  
 
 foreach my $pages (@{$users}) {
@@ -63,7 +63,7 @@ foreach my $pages (@{$users}) {
     print $page->{primaryEmail} . "\\n";
   }
 }
-
+```
 ## getUser
 
 Retrieve a hash containing a user's account information.
