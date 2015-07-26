@@ -6,15 +6,16 @@ Google::Apps::Admin::Provisioning - A Perl library to Google Apps new API system
 
 use Google::Apps::Admin::Provisioning;
 use Data::Dumper;
-
+```
 my $client  = GoogleManager->new(
   'secret\_file' => 'path to client\_secret.json', 
   'domain' => 'example.com'
 );
+
 my $service = $client->buildService('admin', 'directory\_v1');
 
 print Dumper $client->getLicenseInfo();
-
+```
 # DESCRIPTION
 
 Google::Apps::Admin::Provisioning  provides a Perl interface to Google Apps
