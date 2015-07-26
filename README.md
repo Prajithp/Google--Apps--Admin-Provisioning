@@ -4,9 +4,10 @@ Google::Apps::Admin::Provisioning - A Perl library to Google Apps new API system
 
 # SYNOPSIS
 
+```
 use Google::Apps::Admin::Provisioning;
 use Data::Dumper;
-```
+
 my $client  = GoogleManager->new(
   'secret\_file' => 'path to client\_secret.json', 
   'domain' => 'example.com'
